@@ -1,0 +1,40 @@
+1.  https://disk.yandex.ru/d/wNbPuaZbkoRUFQ - скачиваешь папку с окружением
+
+2.  Эту папку "Start" распаковываешь в любую свою директорию, например в Документы в папку download_Photo
+далее я буду использовать путь как пример:   C:\Users\vladislav\Documents\start\Start
+
+3. Установка python:
+ — https://www.python.org/downloads/windows/    (P.S. у тебя скачается версия 3.11.xxx  а в видео будет 3.9)
+
+
+4. Открываешь cmd(командную строку желательно от администратора) и вводишь путь к папке с файлами:   "cd   C:\Users\vladislav\Documents\start\Start"
+
+ — Выполняешь команду: "python -m venv tutorial-env"
+ — Выполняешь команду: "tutorial-env\Scripts\activate"
+
+
+Запускаешь команды по очереди:
+ —      pip install -r requirements.txt
+ —      pip install selenium
+ —      pip install bs4
+ —      pip install aiohttp
+ —      pip install chromedriver-py (Попробуй без этой команды, если после запуска скрипта фоток не будет в папке. то запусти эту команду, после установки модуля, запусти python main.py)
+
+
+ После загрузки всех модулей
+6.  запускаешь команду: "python main.py"
+—  Командная строка запросит ссылку на страницу,  вводишь например ссылку на страницу:  https://www.gettyimages.es/search/2/image?family=editorial&phrase=1993%20julia%20roberts%20Audrey%20Hepburn&sort=best
+—  потом на папку куда сохранить фото.  Например:  C:\Users\vladislav\Documents\photo
+
+— Ждешь результат загрузки. проверяешь в указной папке "C:\Users\vladislav\Documents\photo" (если фоток нет, выполни команду  "pip install chromedriver-py" и повтори команду "python main.py" )
+
+
+———————————
+
+Как запускать скрипт  в дальнейшем:
+
+1. Открываешь  cmd  от администратора (дальнейшие действия все в cmd)
+2. Идешь к свой папке где хранится скрипт  "cd  C:\Users\vladislav\Documents\start\start"
+3. Пишешь команду  "tutorial-env\Scripts\activate"
+4. Пишешь команду: "python main.py"
+Далее ссылка и потом путь к фото
